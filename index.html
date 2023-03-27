@@ -12,9 +12,15 @@
   </head>
   <body>
 
-    <h1>Hello Electron!</h1>
-    <p>Build cross-platform desktop apps with JavaScript, HTML, and CSS</p>
-
+    <h2>Name+#</h2>
+    <!-- <p>Build cross-platform desktop apps with JavaScript, HTML, and CSS</p> -->
+    <button type="button" id="add-button">Add</button>
+    <button type="button" id="remove-button">remove</button>
+    <div class="container">
+      <img id="QR" src="" width="200" height="200" hidden="true"/>
+      <textarea class="textarea" id="console" rows="10" cols="80" readonly="true"> log</textarea>
+    </div>
+    
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
